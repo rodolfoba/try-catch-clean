@@ -56,7 +56,7 @@ public class StrategyMain {
             for (AuthenticatorStrategy strategy : strategies) {
                 user = tryLogin(strategy);
                 if (null != user) {
-                    break;
+                    return;
                 }
             }
             
